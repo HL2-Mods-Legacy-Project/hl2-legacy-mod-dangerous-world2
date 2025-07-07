@@ -1,0 +1,12 @@
+& "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
+  -Version "<version>" `
+  -PreReleaseVersion "beta.1" `
+  -OutputFilePrefix "<output file prefix>" `
+  -ModName "<mod name>" `
+  -ModFolder "<mod folder>" `
+  -AdditionalModFolders @() `
+  -ModFilesPath "$PSScriptRoot\..\game" `
+  -ModBaseFilesUrl "<url to mod base files zip>" `
+  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
+  -ModReadmePath "<mod readme path>" `
+  -PublishPath "$PSScriptRoot\..\artifacts\publish"
